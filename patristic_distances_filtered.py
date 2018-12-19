@@ -24,4 +24,4 @@ keys = list(dm.keys())
 for i in range(len(keys)-1):
     for j in range(i+1,len(keys)):
         if dm[keys[i]][keys[j]] <= t:
-            outfile.write('%f\n'%dm[keys[i]][keys[j]])
+            outfile.write('%s,%s,%f\n'%keys[i],keys[j],dm[keys[i]][keys[j]])
