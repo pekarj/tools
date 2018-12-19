@@ -10,8 +10,8 @@ import argparse
 # parse arguments
 def parseArgs():
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.ArgumentDefaultsHelpFormatter)
-    parser.add_argument('-i', '--input', required=False, type=argparse.FileType('r'), default=stdin, help="Input FASTA")
-    parser.add_argument('-o', '--output', required=False, type=argparse.FileType('w'), default=stdout, help="Output")
+    parser.add_argument('-i', '--input', required=False, type=argparse.FileType('r'), help="Input FASTA")
+    parser.add_argument('-o', '--output', required=False, type=argparse.FileType('w'), help="Output")
     parser.add_argument('-r', '--randomIndex', required=False, type=float, default=None, help="Sequence to change in input")
     parser.add_argument('-e', '--externalSeq', required=False, type=argparse.FileType('r'), help="External sequence to incorporate")
     args = parser.parse_args()
