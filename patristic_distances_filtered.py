@@ -1,7 +1,7 @@
 #! /usr/bin/env python3
 '''
 based on Niema Moshiri 2017
-Compute all patristic distances from the given tree
+Compute all patristic distances from the given tree at a certain threshold
 '''
 import argparse
 from sys import stdin,stdout
