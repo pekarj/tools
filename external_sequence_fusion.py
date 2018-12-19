@@ -20,6 +20,7 @@ def parseArgs():
 
 # main code execution
 infile, outfile, random_seq_index, external_seq = parseArgs()
+seqs = infile
 #seqs = readFASTA(infile)
 #infile.close()
   
