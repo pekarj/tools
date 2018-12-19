@@ -2,7 +2,9 @@
 
 import numpy as np
 import pandas as pd
-from Bio import SeqIO, Seq, SeqRecord
+from Bio import SeqIO
+from Bio import Seq
+from Bio import SeqRecord
 from treeswift import read_tree_newick
 import argparse
 
@@ -68,9 +70,9 @@ for i in range(len(old_seq.seq)):
 
 rec = SeqRecord(Seq.Seq(new_seq), 
                 name=old_seq.name, 
-                id=old_seq.name)#,
-                #description=old_seq.name)
-
+                id=old_seq.name,
+                description=old_seq.name)
+                
 records = []
 for index, record in enumerate(SeqIO.parse(old_seqs_path, "fasta")):
     if index == random_seq_index:
