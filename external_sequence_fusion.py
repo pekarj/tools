@@ -5,6 +5,7 @@ import pandas as pd
 from Bio import SeqIO
 from Bio import Seq
 from treeswift import read_tree_newick
+import argparse
 
 # parse arguments
 def parseArgs():
