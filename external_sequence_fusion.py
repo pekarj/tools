@@ -20,8 +20,8 @@ def parseArgs():
 
 # main code execution
 infile, outfile, random_seq_index, external_seq = parseArgs()
-seqs = readFASTA(infile)
-infile.close()
+#seqs = readFASTA(infile)
+#infile.close()
   
 ext_seq = list(SeqIO.parse(external_seq, "fasta"))[0]
 
