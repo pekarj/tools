@@ -33,12 +33,12 @@ for index, record in enumerate(SeqIO.parse(seqs, "fasta")):
 #making a new seq
 new_seq = ""
 for i in range(len(old_seq.seq)):
-    if i > len(hxb2.seq) - 1:
+    if i > len(ext_seq.seq) - 1:
         new_seq += "-"
     else:
         # keeping the seq the same
-        if hxb2.seq[i] == old_seq.seq[i]:
-            new_seq += hxb2.seq[i]
+        if ext_seq.seq[i] == old_seq.seq[i]:
+            new_seq += ext_seq.seq[i]
         else:
             # adding the ambigs
             if ext_seq.seq[i] == "Y" or old_seq.seq[i] == "Y":
