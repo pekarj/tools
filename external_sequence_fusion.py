@@ -2,8 +2,7 @@
 
 import numpy as np
 import pandas as pd
-from Bio import SeqIO
-from Bio import Seq
+from Bio import SeqIO, Seq, SeqRecord
 from treeswift import read_tree_newick
 import argparse
 
