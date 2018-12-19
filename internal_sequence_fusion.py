@@ -1,4 +1,4 @@
-# Fusing an external sequence with a viral sequence in a fasta file to make a sequence with ambigs in that fasta file.
+# Fusing an internal sequence with a viral sequence, both from the same fasta file, to make a sequence with ambigs in that fasta file.
 
 import numpy as np
 import pandas as pd
