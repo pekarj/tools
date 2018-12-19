@@ -68,8 +68,8 @@ for i in range(len(old_seq.seq)):
 
 rec = SeqRecord(Seq.Seq(new_seq), 
                 name=old_seq.name, 
-                id=old_seq.name,
-                description=old_seq.name)
+                id=old_seq.name)#,
+                #description=old_seq.name)
 
 records = []
 for index, record in enumerate(SeqIO.parse(old_seqs_path, "fasta")):
