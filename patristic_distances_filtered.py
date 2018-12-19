@@ -21,7 +21,7 @@ infile, outfile, t = parseArgs()
 dm = read_tree_newick(infile.read()).distance_matrix()
 infile.close()
 outfile = str(outfile) + ".txt"
-outfile_filtered = str(outlife) + ".filtered.txt"
+outfile_filtered = str(outfile) + ".filtered.txt"
 keys = list(dm.keys())
 for i in range(len(keys)-1):
     for j in range(i+1,len(keys)):
